@@ -3,3 +3,13 @@ fetch("nav.html")
   .then((data) => {
     document.getElementById("nav").innerHTML = data;
   });
+
+// Lenis örneği oluştur
+const lenis = new Lenis();
+
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
