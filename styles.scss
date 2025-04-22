@@ -180,6 +180,16 @@ nav {
         box-shadow: 0 0 10px #13351b49;
       }
     }
+
+    > .cut_divider {
+      width: 100vw;
+      position: absolute;
+      bottom: -4rem;
+      > img {
+        width: 100%;
+      }
+    }
+
     @media screen and (max-width: $media_sm) {
       padding-top: 0rem;
       align-items: flex-start;
@@ -218,6 +228,7 @@ nav {
     align-items: center;
     gap: 2rem;
     justify-content: center;
+    margin-top: 3rem;
     > a {
       display: inline-block;
       width: 50%;
@@ -270,7 +281,7 @@ nav {
     justify-content: space-around;
     // height: 15rem;
     width: 100%;
-    margin-top: 3rem;
+    margin-top: 5rem;
     gap: 2rem;
     align-items: center;
     > div {
@@ -333,7 +344,7 @@ nav {
         > img {
           height: 100%;
           width: 100%;
-          object-fit: cover;
+          object-fit: contain;
           border-radius: 0.3rem;
         }
       }
@@ -345,8 +356,9 @@ nav {
         flex-direction: column;
         gap: 0.5rem;
         > h2 {
-          font-size: 1.1rem;
+          font-size: 1.2rem;
           font-weight: 500;
+          color: $accent-2-dark;
         }
         > p {
           line-height: 130%;
