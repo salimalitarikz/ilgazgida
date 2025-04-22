@@ -194,7 +194,8 @@ menu > .footer {
 menu.active {
   opacity: 1;
   top: 5.2rem !important;
-  height: 85vh !important;
+  height: -moz-max-content !important;
+  height: max-content !important;
 }
 
 footer {

@@ -229,7 +229,8 @@ menu {
   &.active {
     opacity: 1;
     top: 5.2rem !important;
-    height: 85vh !important;
+    // height: 85vh !important;
+    height: max-content !important;
   }
 }
 
